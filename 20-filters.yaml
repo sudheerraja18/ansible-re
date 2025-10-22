@@ -30,4 +30,16 @@
     ansible.builtin.debug:
       msg: "Course info: {{ course | items2dict }}"
 
+  - name: convert lower to upper
+    vars:
+      txt: "Gurram Sudheer Raja"
+    ansible.builtin.debug:
+      msg: "lower to upper =>  {{ txt | upper }}"
+
+  - name: convert  upper to lower 
+    vars:
+      txt: "Gurram Sudheer Raja"
+    ansible.builtin.debug:
+      msg: "upper to lower =>  {{ txt | lower }}"
+
 
