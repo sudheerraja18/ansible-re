@@ -42,4 +42,10 @@
     ansible.builtin.debug:
       msg: "upper to lower =>  {{ txt | lower }}"
 
+  - name: print  min to max 
+    vars:
+      numbers: [ 123, 4, 7890, -3, 89898 ]
+    ansible.builtin.debug:
+      msg: "min number is {{ numbers | min }} <<==>> max number is {{ numbers | max }}"
+
 
